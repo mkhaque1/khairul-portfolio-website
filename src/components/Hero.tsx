@@ -75,7 +75,7 @@ const Hero = () => {
           >
             <span className="text-2xl">👋</span>
             <span className="text-gray-700 dark:text-gray-300 text-sm md:text-base">
-              Hello, I'm John Doe
+              Hello, I'm Khairul Haque
             </span>
           </motion.div>
 

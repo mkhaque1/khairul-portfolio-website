@@ -1,6 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, ArrowUp, Mail, Phone, Github, Linkedin, Twitter } from 'lucide-react';
+import {
+  Heart,
+  ArrowUp,
+  Mail,
+  Phone,
+  Github,
+  Linkedin,
+  Twitter,
+} from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,9 +22,13 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/johndoe', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/johndoe', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com/johndoe', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/mkhaque1', label: 'GitHub' },
+    {
+      icon: Linkedin,
+      href: 'https://linkedin.com/in/mkhaque',
+      label: 'LinkedIn',
+    },
+    { icon: Twitter, href: 'https://twitter.com/mkhaque1', label: 'Twitter' },
   ];
 
   const scrollToTop = () => {
@@ -39,7 +51,7 @@ const Footer = () => {
               <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">JD</span>
               </div>
-              <span className="text-2xl font-bold">John Doe</span>
+              <span className="text-2xl font-bold">Khairul Haque</span>
             </motion.div>
             <motion.p
               className="text-gray-400 mb-6 max-w-md"
@@ -48,8 +60,9 @@ const Footer = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Frontend Developer & UI Designer passionate about creating beautiful, 
-              functional web experiences. Let's build something amazing together.
+              Frontend Developer & UI Designer passionate about creating
+              beautiful, functional web experiences. Let's build something
+              amazing together.
             </motion.p>
             <motion.div
               className="flex items-center space-x-4"
@@ -59,11 +72,11 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <a
-                href="mailto:john.doe@example.com"
+                href="mailto:info@pyonet.com"
                 className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-200"
               >
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">john.doe@example.com</span>
+                <span className="text-sm">mkhaque.com</span>
               </a>
             </motion.div>
             <motion.div
@@ -142,7 +155,7 @@ const Footer = () => {
                 </motion.a>
               ))}
             </motion.div>
-            
+
             {/* Newsletter Signup */}
             <motion.div
               className="mt-6"
@@ -151,7 +164,9 @@ const Footer = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <p className="text-sm text-gray-400 mb-2">Stay updated with my latest work</p>
+              <p className="text-sm text-gray-400 mb-2">
+                Stay updated with my latest work
+              </p>
               <div className="flex">
                 <input
                   type="email"
@@ -177,7 +192,7 @@ const Footer = () => {
           <div className="flex items-center space-x-2 text-sm text-gray-400 mb-4 md:mb-0">
             <span>Made with</span>
             <Heart className="w-4 h-4 text-red-500" />
-            <span>by John Doe © {currentYear}. All rights reserved.</span>
+            <span>by Khairul Haque © {currentYear}. All rights reserved.</span>
           </div>
 
           {/* Back to Top Button */}

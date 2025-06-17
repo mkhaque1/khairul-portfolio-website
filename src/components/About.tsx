@@ -16,37 +16,43 @@ const About = () => {
     {
       icon: Code2,
       title: 'Frontend Development',
-      description: 'Building responsive, interactive web applications using modern frameworks and libraries.',
+      description:
+        'Building responsive, interactive web applications using modern frameworks and libraries.',
       color: 'text-blue-500',
     },
     {
       icon: Palette,
       title: 'UI/UX Design',
-      description: 'Creating beautiful, user-centered designs that enhance user experience and engagement.',
+      description:
+        'Creating beautiful, user-centered designs that enhance user experience and engagement.',
       color: 'text-purple-500',
     },
     {
       icon: Smartphone,
       title: 'Mobile Development',
-      description: 'Developing cross-platform mobile applications with React Native and responsive design.',
+      description:
+        'Developing cross-platform mobile applications with React Native and responsive design.',
       color: 'text-pink-500',
     },
     {
       icon: Globe,
       title: 'Web Performance',
-      description: 'Optimizing web applications for speed, accessibility, and search engine optimization.',
+      description:
+        'Optimizing web applications for speed, accessibility, and search engine optimization.',
       color: 'text-green-500',
     },
     {
       icon: Database,
       title: 'Full-Stack Solutions',
-      description: 'Building complete web solutions from database design to deployment and maintenance.',
+      description:
+        'Building complete web solutions from database design to deployment and maintenance.',
       color: 'text-indigo-500',
     },
     {
       icon: Zap,
       title: 'API Integration',
-      description: 'Integrating third-party APIs and services to extend application functionality.',
+      description:
+        'Integrating third-party APIs and services to extend application functionality.',
       color: 'text-yellow-500',
     },
   ];
@@ -94,7 +100,8 @@ const About = () => {
             className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
             variants={itemVariants}
           >
-            Passionate frontend developer with a keen eye for design and a love for creating exceptional digital experiences
+            Passionate frontend developer with a keen eye for design and a love
+            for creating exceptional digital experiences
           </motion.p>
         </motion.div>
 
@@ -109,18 +116,22 @@ const About = () => {
           >
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Hi, I'm John Doe
+                Hi, I'm Khairul Haque
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                With over 5 years of experience in frontend development, I specialize in creating modern, 
-                responsive web applications that not only look great but also deliver exceptional user experiences. 
-                My journey in web development started with a curiosity about how websites work, and it has evolved 
-                into a passion for crafting digital solutions that make a difference.
+                With over 5 years of experience in frontend development, I
+                specialize in creating modern, responsive web applications that
+                not only look great but also deliver exceptional user
+                experiences. My journey in web development started with a
+                curiosity about how websites work, and it has evolved into a
+                passion for crafting digital solutions that make a difference.
               </p>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                I believe in writing clean, maintainable code and staying up-to-date with the latest technologies 
-                and best practices. When I'm not coding, you can find me exploring new design trends, 
-                contributing to open-source projects, or sharing knowledge with the developer community.
+                I believe in writing clean, maintainable code and staying
+                up-to-date with the latest technologies and best practices. When
+                I'm not coding, you can find me exploring new design trends,
+                contributing to open-source projects, or sharing knowledge with
+                the developer community.
               </p>
             </motion.div>
 
@@ -128,7 +139,14 @@ const About = () => {
               className="flex flex-wrap gap-4"
               variants={itemVariants}
             >
-              {['JavaScript', 'React', 'TypeScript', 'Node.js', 'Python', 'AWS'].map((tech) => (
+              {[
+                'JavaScript',
+                'React',
+                'TypeScript',
+                'Node.js',
+                'Python',
+                'AWS',
+              ].map((tech) => (
                 <span
                   key={tech}
                   className="px-3 py-1 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm border border-gray-200 dark:border-gray-600"
@@ -162,9 +180,13 @@ const About = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">
                     <span className="text-xl">{skill.icon}</span>
-                    <span className="font-medium text-gray-900 dark:text-white">{skill.name}</span>
+                    <span className="font-medium text-gray-900 dark:text-white">
+                      {skill.name}
+                    </span>
                   </div>
-                  <span className="text-sm text-gray-600 dark:text-gray-400">{skill.level}%</span>
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    {skill.level}%
+                  </span>
                 </div>
                 <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                   <motion.div

@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react';
+import {
+  Send,
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Github,
+  Twitter,
+} from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +18,9 @@ const Contact = () => {
     message: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -29,19 +39,13 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'john.doe@example.com',
-      href: 'mailto:john.doe@example.com',
-    },
-    {
-      icon: Phone,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: 'khairul.haque@example.com',
+      href: 'mailto:info@pyonet.com',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Germany',
       href: '#',
     },
   ];
@@ -50,19 +54,19 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/johndoe',
+      href: 'https://linkedin.com/in/mkhaque',
       color: 'hover:text-blue-600',
     },
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/johndoe',
+      href: 'https://github.com/mkhaque1',
       color: 'hover:text-gray-800 dark:hover:text-gray-300',
     },
     {
       icon: Twitter,
       label: 'Twitter',
-      href: 'https://twitter.com/johndoe',
+      href: 'https://twitter.com/mkhaque1',
       color: 'hover:text-blue-400',
     },
   ];
@@ -110,7 +114,8 @@ const Contact = () => {
             className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
             variants={itemVariants}
           >
-            Have a project in mind? I'd love to hear about it. Let's discuss how we can bring your ideas to life.
+            Have a project in mind? I'd love to hear about it. Let's discuss how
+            we can bring your ideas to life.
           </motion.p>
         </motion.div>
 
@@ -226,8 +231,9 @@ const Contact = () => {
                 Get in touch
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-8">
-                I'm always interested in new opportunities and exciting projects. 
-                Whether you have a question or just want to say hi, I'll do my best to get back to you!
+                I'm always interested in new opportunities and exciting
+                projects. Whether you have a question or just want to say hi,
+                I'll do my best to get back to you!
               </p>
             </motion.div>
 
@@ -244,8 +250,12 @@ const Contact = () => {
                     <item.icon className="w-6 h-6 text-purple-500 group-hover:text-purple-600 transition-colors duration-200" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">{item.label}</p>
-                    <p className="text-gray-900 dark:text-white font-medium">{item.value}</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      {item.label}
+                    </p>
+                    <p className="text-gray-900 dark:text-white font-medium">
+                      {item.value}
+                    </p>
                   </div>
                 </motion.a>
               ))}
@@ -278,12 +288,15 @@ const Contact = () => {
               className="p-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl text-white"
               variants={itemVariants}
             >
-              <h4 className="text-xl font-bold mb-2">Ready to start your project?</h4>
+              <h4 className="text-xl font-bold mb-2">
+                Ready to start your project?
+              </h4>
               <p className="mb-4 opacity-90">
-                Let's discuss your ideas and turn them into reality. I'm here to help!
+                Let's discuss your ideas and turn them into reality. I'm here to
+                help!
               </p>
               <motion.a
-                href="mailto:john.doe@example.com"
+                href="mailto:info@pyonet.com"
                 className="inline-flex items-center space-x-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg hover:bg-white/30 transition-colors duration-200"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
