@@ -5,59 +5,64 @@ import { Calendar, MapPin, Building } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Senior Frontend Developer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
+      title: 'Frontend UI / UX Developer',
+      company: 'Contabo',
+      location: 'Remote (Germany)',
+      period: '2024 - Present',
       description: [
-        'Led a team of 5 developers in building modern web applications using React and TypeScript',
-        'Implemented micro-frontend architecture resulting in 40% faster deployment cycles',
-        'Collaborated with UX/UI designers to create responsive and accessible user interfaces',
-        'Mentored junior developers and established code review processes',
+        'Component Development: Designing and implementing reusable components for the frontend to streamline development and maintain consistency across projects.',
+        'Headless CMS Integration: Working with Payload, a headless CMS, to manage and deliver content effectively, ensuring seamless integration with our web applications.',
+        'UI/UX Improvements: Creating and refining mockups to transition from outdated UI designs to modern, user-centric interfaces, enhancing overall user experience.',
       ],
-      technologies: ['React', 'TypeScript', 'Next.js', 'GraphQL', 'AWS'],
+      technologies: [
+        'Astro',
+        'TypeScript',
+        'Next.js',
+        'GraphQL',
+        'Payload CMS',
+      ],
       color: 'bg-purple-500',
     },
     {
-      title: 'Frontend Developer',
-      company: 'StartupXYZ',
-      location: 'Remote',
-      period: '2020 - 2022',
+      title: 'Web Designer',
+      company: 'Stellen-kombi GmbH',
+      location: 'Esen, Germany',
+      period: '2023 - 2024',
       description: [
         'Developed and maintained multiple client-facing web applications',
         'Improved application performance by 60% through code optimization and lazy loading',
         'Integrated RESTful APIs and implemented real-time features using WebSockets',
         'Collaborated with cross-functional teams in an Agile environment',
       ],
-      technologies: ['React', 'JavaScript', 'Tailwind CSS', 'Node.js', 'MongoDB'],
+      technologies: ['React', 'JavaScript', 'Tailwind CSS'],
       color: 'bg-blue-500',
     },
     {
       title: 'Junior Web Developer',
-      company: 'Digital Agency Pro',
-      location: 'New York, NY',
-      period: '2019 - 2020',
+      company: 'Rheinduett GmbH',
+      location: 'Köln, Germany',
+      period: '2012 - 2023',
       description: [
         'Built responsive websites for various clients using modern web technologies',
         'Worked closely with designers to implement pixel-perfect UI components',
         'Gained experience in version control, testing, and deployment processes',
         'Participated in client meetings and provided technical recommendations',
       ],
-      technologies: ['HTML', 'CSS', 'JavaScript', 'WordPress', 'PHP'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'WordPress', 'React.js'],
       color: 'bg-green-500',
     },
     {
       title: 'Web Development Intern',
-      company: 'Creative Studios',
-      location: 'Boston, MA',
-      period: '2018 - 2019',
+      company: 'Braintrust',
+      location: 'Bremen, Germany',
+      period: '2022',
       description: [
         'Assisted in developing company website and internal tools',
         'Gained hands-on experience with modern web development workflows',
         'Learned about responsive design principles and cross-browser compatibility',
         'Contributed to open-source projects and company technical blog',
       ],
-      technologies: ['HTML', 'CSS', 'JavaScript', 'Git', 'Bootstrap'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Git', 'TypeScript'],
       color: 'bg-pink-500',
     },
   ];
@@ -105,7 +110,8 @@ const Experience = () => {
             className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
             variants={itemVariants}
           >
-            My professional journey in frontend development and the impactful projects I've worked on
+            My professional journey in frontend development and the impactful
+            projects I've worked on
           </motion.p>
         </motion.div>
 
@@ -162,7 +168,10 @@ const Experience = () => {
                     {/* Description */}
                     <ul className="space-y-2 mb-4">
                       {exp.description.map((item, i) => (
-                        <li key={i} className="text-gray-600 dark:text-gray-400 text-sm flex items-start">
+                        <li
+                          key={i}
+                          className="text-gray-600 dark:text-gray-400 text-sm flex items-start"
+                        >
                           <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-2 flex-shrink-0"></span>
                           {item}
                         </li>
