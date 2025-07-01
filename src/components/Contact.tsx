@@ -39,7 +39,7 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'khairul.haque@example.com',
+      value: 'mkhaque29@gmail.com',
       href: 'mailto:info@pyonet.com',
     },
     {

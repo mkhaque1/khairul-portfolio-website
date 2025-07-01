@@ -38,7 +38,7 @@ const Header = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = 'src/images/files/M M Khairul Haque_CV_2025.pdf';
+    link.href = 'src/public/M M Khairul Haque_CV_2025.pdf';
     link.download = 'M_M_Khairul_Haque_CV.pdf';
     link.click();
   };
