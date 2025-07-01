@@ -1,9 +1,11 @@
+import { Apple } from 'lucide-react';
+
 export const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
+    title: 'CaptionCraft AI',
     description:
-      'A modern e-commerce platform built with React and Node.js, featuring real-time inventory management, payment processing, and admin dashboard.',
+      'From Threads to Reels — craft engaging content for any platform with AI Support for LinkedIn, Twitter, Instagram, TikTok, YouTube & more.',
     longDescription:
       'This comprehensive e-commerce platform was built to handle high-traffic scenarios with real-time inventory management. The platform includes features like user authentication, shopping cart functionality, payment processing with Stripe, order tracking, and a comprehensive admin dashboard for managing products, orders, and analytics.',
     image:
@@ -13,17 +15,16 @@ export const projects = [
       'https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&cs=tinysrgb&w=800',
       'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800',
     ],
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Socket.io'],
+    technologies: ['Next js', 'React', 'Firebase', 'Stripe', 'Tailwind CSS'],
     category: 'Full-Stack',
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-    tags: ['E-commerce', 'Real-time', 'Payment Processing'],
+    Live: 'https://captioncraftt.com',
+    tags: ['AI', 'Real-time', 'Payment Processing', 'Full-Stack'],
   },
   {
     id: 2,
-    title: 'Task Management App',
+    title: 'Quick Split Together webApp',
     description:
-      'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+      'The smartest way to manage group expenses. Track, split, and settle bills with friends seamlessly.',
     longDescription:
       'This task management application was designed to improve team productivity with features like real-time collaboration, drag-and-drop task organization, deadline tracking, file attachments, and detailed progress analytics. The app supports multiple projects and team members with role-based permissions.',
     image:
@@ -32,10 +33,10 @@ export const projects = [
       'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
       'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
     ],
-    technologies: ['React', 'TypeScript', 'Firebase', 'Material-UI'],
+    technologies: ['React', 'TypeScript', 'Firebase', 'Shadcn UI'],
     category: 'Frontend',
-    github: 'https://github.com',
-    demo: 'https://demo.com',
+    github: 'https://github.com/mkhaque1',
+    demo: 'quick-split-together.vercel.app',
     tags: ['Productivity', 'Collaboration', 'Real-time'],
   },
   {
@@ -58,9 +59,9 @@ export const projects = [
   },
   {
     id: 4,
-    title: 'Crypto Trading Bot',
+    title: 'Agency website',
     description:
-      'An automated cryptocurrency trading bot with real-time market analysis, risk management, and portfolio tracking.',
+      'Pyonet delivers cutting-edge technology services to transform your business and drive growth in the digital age.',
     longDescription:
       'This sophisticated trading bot uses advanced algorithms to analyze cryptocurrency markets in real-time. Features include automated trading strategies, risk management protocols, portfolio diversification, backtesting capabilities, and comprehensive performance analytics with detailed reporting.',
     image:
@@ -69,52 +70,34 @@ export const projects = [
       'https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=800',
       'https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=800',
     ],
-    technologies: ['Python', 'React', 'WebSocket', 'TradingView API'],
+    technologies: ['Python', 'React', 'Next js', 'Shadcn UI', 'Tailwind CSS'],
     category: 'Full-Stack',
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-    tags: ['Cryptocurrency', 'Trading', 'Automation', 'Analytics'],
+    github: 'https://github.com/mkhaque1/pyonet-next',
+    demo: 'https://pyonet-next.vercel.app/',
+    tags: ['Agency', 'Portfolio', 'Automation', 'Analytics'],
   },
   {
     id: 5,
-    title: 'Social Media Analytics',
+    title: 'Saas Landing Page',
     description:
-      'A comprehensive social media analytics platform with data visualization and reporting features.',
+      'Introducing a completely marketing interface — Explore the demo',
     longDescription:
-      'This analytics platform helps businesses track their social media performance across multiple platforms. Features include engagement metrics, audience insights, competitor analysis, automated reporting, and customizable dashboards with various chart types and filters.',
+      'Empower Your Marketing Without Breaking the Bank. Our SaaS landing page is designed to showcase your product’s features, benefits, and pricing plans with a clean, modern design. The page includes sections for testimonials, FAQs, and a call-to-action to encourage sign-ups.',
     image:
       'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
     images: [
       'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
       'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
     ],
-    technologies: ['Vue.js', 'Python', 'PostgreSQL', 'Chart.js'],
-    category: 'Full-Stack',
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-    tags: ['Analytics', 'Social Media', 'Data Visualization'],
+    technologies: ['React', 'Framer', 'Typescript', 'taiwlwind CSS'],
+    category: 'Frontend',
+    github: 'https://github.com/mkhaque1/saas-landing-01',
+    demo: 'https://saas-landing-kappa.vercel.app/',
+    tags: ['Saas', 'Landing Page', 'React', 'Marketing'],
   },
   {
-    id: 6,
-    title: 'Learning Management System',
-    description:
-      'An educational platform with course management, progress tracking, and interactive learning features.',
-    longDescription:
-      'This LMS platform provides a comprehensive solution for online education with course creation tools, student progress tracking, interactive quizzes, video streaming, discussion forums, and certificate generation. The platform supports multiple user roles and learning paths.',
-    image:
-      'https://images.pexels.com/photos/5940841/pexels-photo-5940841.jpeg?auto=compress&cs=tinysrgb&w=800',
-    images: [
-      'https://images.pexels.com/photos/5940841/pexels-photo-5940841.jpeg?auto=compress&cs=tinysrgb&w=800',
-    ],
-    technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS S3'],
-    category: 'Full-Stack',
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-    tags: ['Education', 'LMS', 'Video Streaming'],
-  },
-  {
-    id: 7,
-    title: 'Portfolio Website',
+    id: 8,
+    title: 'Agency Portfolio Website',
     description:
       'A modern portfolio website with smooth animations, dark mode, and responsive design.',
     longDescription:
@@ -126,8 +109,43 @@ export const projects = [
     ],
     technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Netlify'],
     category: 'Frontend',
-    github: 'https://github.com',
-    demo: 'https://demo.com',
+    Live: 'https://www.pyonet.com/',
     tags: ['Portfolio', 'Animation', 'Responsive'],
+  },
+  {
+    id: 6,
+    title: 'Movie Api Project',
+    description:
+      'A Frontend movie database application with user authentication, search functionality, and personalized recommendations.',
+    longDescription:
+      'This movie database application allows users to search for movies, view detailed information, and manage their watchlists. It features user authentication, personalized recommendations based on viewing history, and a responsive design for optimal viewing on all devices.',
+    image:
+      'https://images.pexels.com/photos/5940841/pexels-photo-5940841.jpeg?auto=compress&cs=tinysrgb&w=800',
+    images: [
+      'https://images.pexels.com/photos/5940841/pexels-photo-5940841.jpeg?auto=compress&cs=tinysrgb&w=800',
+    ],
+    technologies: ['React', 'API', 'Database', 'tailwind CSS'],
+    category: 'Full-Stack',
+    github: 'https://github.com/mkhaque1/api-project-movie-app',
+    demo: 'https://api-project-movie-app.vercel.app/',
+    tags: ['Api', 'Movie', 'Movie Database'],
+  },
+  {
+    id: 7,
+    title: 'App Landing Page',
+    description:
+      'A sleek landing page for a mobile app with a focus on user engagement and conversion.',
+    longDescription:
+      'This app landing page is designed to highlight the features and benefits of a mobile application. It includes sections for app screenshots, user testimonials, pricing plans, and a call-to-action to download the app. The design is optimized for both desktop and mobile devices.',
+    image:
+      'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+    images: [
+      'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+    ],
+    technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Netlify'],
+    category: 'Frontend',
+    github: 'https://github.com/mkhaque1/iphone-3d-website-developing',
+    demo: 'https://react-3d-website-threejs.vercel.app/',
+    tags: ['3d', 'Animation', 'Responsive', 'Landing Page'],
   },
 ];
