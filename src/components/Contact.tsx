@@ -94,6 +94,16 @@ const Contact = () => {
     },
   };
 
+  // Verification modal state
+  const [showVerify, setShowVerify] = useState(false);
+  const [verifyInput, setVerifyInput] = useState('');
+  const [verified, setVerified] = useState(false);
+  const [verifyError, setVerifyError] = useState('');
+
+  // Programmer question and answer
+  const question = 'What is the output of 2 + (3*1) in JavaScript?';
+  const answer = '5';
+
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
@@ -295,15 +305,80 @@ const Contact = () => {
                 Let's discuss your ideas and turn them into reality. I'm here to
                 help!
               </p>
-              <motion.a
-                href="mailto:info@pyonet.com"
+              <motion.button
+                type="button"
                 className="inline-flex items-center space-x-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg hover:bg-white/30 transition-colors duration-200"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => setShowVerify(true)}
+                disabled={verified}
               >
                 <Mail className="w-4 h-4" />
-                <span>Email me directly</span>
-              </motion.a>
+                <span>
+                  {verified ? (
+                    <a href="mailto:mkhaque29@gmail.com" className="underline">
+                      Email me directly
+                    </a>
+                  ) : (
+                    'Email me directly'
+                  )}
+                </span>
+              </motion.button>
+              {/* Verification Modal */}
+              {showVerify && !verified && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl max-w-sm w-full">
+                    <h5 className="font-bold mb-2 text-gray-900 dark:text-white">
+                      Human Verification
+                    </h5>
+                    <p className="mb-4 text-gray-700 dark:text-gray-300">
+                      {question}
+                    </p>
+                    <input
+                      type="text"
+                      className="w-full px-3 py-2 rounded border border-gray-300 dark:border-gray-600 mb-2 text-gray-900 dark:text-white bg-white dark:bg-gray-700"
+                      value={verifyInput}
+                      onChange={(e) => setVerifyInput(e.target.value)}
+                      placeholder="Your answer"
+                      autoFocus
+                    />
+                    {verifyError && (
+                      <p className="text-red-500 text-sm mb-2">{verifyError}</p>
+                    )}
+                    <div className="flex justify-end space-x-2">
+                      <button
+                        className="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+                        onClick={() => {
+                          setShowVerify(false);
+                          setVerifyInput('');
+                          setVerifyError('');
+                        }}
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        className="px-4 py-2 rounded bg-purple-500 text-white font-semibold"
+                        onClick={() => {
+                          if (verifyInput.trim() === answer) {
+                            setVerified(true);
+                            setShowVerify(false);
+                            setVerifyInput('');
+                            setVerifyError('');
+                            setTimeout(() => {
+                              window.location.href =
+                                'mailto:mkhaque29@gmail.com';
+                            }, 300);
+                          } else {
+                            setVerifyError('Incorrect! Try again.');
+                          }
+                        }}
+                      >
+                        Verify
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
             </motion.div>
           </motion.div>
         </div>
