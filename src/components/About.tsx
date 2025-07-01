@@ -8,8 +8,8 @@ const About = () => {
     { name: 'TypeScript', icon: '🟦', level: 90, color: 'bg-blue-600' },
     { name: 'Next.js', icon: '▲', level: 88, color: 'bg-gray-800' },
     { name: 'Tailwind CSS', icon: '🎨', level: 92, color: 'bg-cyan-500' },
-    { name: 'Node.js', icon: '🟢', level: 85, color: 'bg-green-500' },
-    { name: 'Python', icon: '🐍', level: 80, color: 'bg-yellow-500' },
+    { name: 'Wordpress', icon: '🟢', level: 85, color: 'bg-green-500' },
+    { name: 'Figma', icon: '💻', level: 80, color: 'bg-yellow-500' },
   ];
 
   const services = [
@@ -143,9 +143,17 @@ const About = () => {
                 'JavaScript',
                 'React',
                 'TypeScript',
-                'Node.js',
-                'Python',
-                'AWS',
+                'Next.js',
+                'Tailwind CSS',
+                'Firebase',
+                'GraphQL',
+                'Git',
+                'Figma',
+                'WordPress',
+                'Web Performance',
+                'API Integration',
+                'Responsive Design',
+                'Cross-Browser Compatibility',
               ].map((tech) => (
                 <span
                   key={tech}
