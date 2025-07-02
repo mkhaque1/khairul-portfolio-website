@@ -93,7 +93,7 @@ const Projects = () => {
             Featured Projects
           </motion.h2>
           <motion.p
-            className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-8"
+            className="text-md text-gray-600 dark:text-gray-400 max-w-xl mx-auto mb-8"
             variants={itemVariants}
           >
             A showcase of my recent work and the technologies I've used to bring

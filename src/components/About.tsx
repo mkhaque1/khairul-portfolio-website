@@ -97,7 +97,7 @@ const About = () => {
             About Me
           </motion.h2>
           <motion.p
-            className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
+            className="text-md text-gray-600 dark:text-gray-400 max-w-xl mx-auto"
             variants={itemVariants}
           >
             Passionate frontend developer with a keen eye for design and a love
