@@ -1,5 +1,3 @@
-import { Apple } from 'lucide-react';
-
 export const projects = [
   {
     id: 1,
@@ -8,12 +6,10 @@ export const projects = [
       'From Threads to Reels — craft engaging content for any platform with AI Support for LinkedIn, Twitter, Instagram, TikTok, YouTube & more.',
     longDescription:
       'This comprehensive e-commerce platform was built to handle high-traffic scenarios with real-time inventory management. The platform includes features like user authentication, shopping cart functionality, payment processing with Stripe, order tracking, and a comprehensive admin dashboard for managing products, orders, and analytics.',
-    image:
-      'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'src/images/captioncraftt.png',
     images: [
-      'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'src/images/captioncraftt_dashboard.png',
+      'src/images/captioncraftt.png',
     ],
     technologies: ['Next js', 'React', 'Firebase', 'Stripe', 'Tailwind CSS'],
     category: 'Full-Stack',
@@ -27,11 +23,10 @@ export const projects = [
       'The smartest way to manage group expenses. Track, split, and settle bills with friends seamlessly.',
     longDescription:
       'This task management application was designed to improve team productivity with features like real-time collaboration, drag-and-drop task organization, deadline tracking, file attachments, and detailed progress analytics. The app supports multiple projects and team members with role-based permissions.',
-    image:
-      'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'src/images/app_split_together.png',
     images: [
-      'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'src/images/app_split_together.png',
     ],
     technologies: ['React', 'TypeScript', 'Firebase', 'Shadcn UI'],
     category: 'Frontend',
@@ -64,12 +59,8 @@ export const projects = [
       'Pyonet delivers cutting-edge technology services to transform your business and drive growth in the digital age.',
     longDescription:
       'This sophisticated trading bot uses advanced algorithms to analyze cryptocurrency markets in real-time. Features include automated trading strategies, risk management protocols, portfolio diversification, backtesting capabilities, and comprehensive performance analytics with detailed reporting.',
-    image:
-      'https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=800',
-    images: [
-      'https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=800',
-    ],
+    image: 'src/images/pyonet_dashboard.png',
+    images: ['src/images/pyonet_dashboard.png', 'src/images/pyonet_home.png'],
     technologies: ['Python', 'React', 'Next js', 'Shadcn UI', 'Tailwind CSS'],
     category: 'Full-Stack',
     github: 'https://github.com/mkhaque1/pyonet-next',
@@ -83,12 +74,8 @@ export const projects = [
       'Introducing a completely marketing interface — Explore the demo',
     longDescription:
       'Empower Your Marketing Without Breaking the Bank. Our SaaS landing page is designed to showcase your product’s features, benefits, and pricing plans with a clean, modern design. The page includes sections for testimonials, FAQs, and a call-to-action to encourage sign-ups.',
-    image:
-      'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-    images: [
-      'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
-    ],
+    image: 'src/images/saas_landing.png',
+    images: ['src/images/saas_landing.png'],
     technologies: ['React', 'Framer', 'Typescript', 'taiwlwind CSS'],
     category: 'Frontend',
     github: 'https://github.com/mkhaque1/saas-landing-01',
@@ -102,11 +89,8 @@ export const projects = [
       'A modern portfolio website with smooth animations, dark mode, and responsive design.',
     longDescription:
       'This portfolio website showcases modern web development techniques with smooth animations, theme switching, responsive design, and optimized performance. Built with accessibility in mind and includes features like project filtering, contact forms, and blog integration.',
-    image:
-      'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-    images: [
-      'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-    ],
+    image: 'src/images/agency_portfolio.png',
+    images: ['src/images/agency_portfolio.png'],
     technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Netlify'],
     category: 'Frontend',
     Live: 'https://www.pyonet.com/',
@@ -119,11 +103,8 @@ export const projects = [
       'A Frontend movie database application with user authentication, search functionality, and personalized recommendations.',
     longDescription:
       'This movie database application allows users to search for movies, view detailed information, and manage their watchlists. It features user authentication, personalized recommendations based on viewing history, and a responsive design for optimal viewing on all devices.',
-    image:
-      'https://images.pexels.com/photos/5940841/pexels-photo-5940841.jpeg?auto=compress&cs=tinysrgb&w=800',
-    images: [
-      'https://images.pexels.com/photos/5940841/pexels-photo-5940841.jpeg?auto=compress&cs=tinysrgb&w=800',
-    ],
+    image: 'src/images/movie_api_project.png',
+    images: ['src/images/movie_api_project.png'],
     technologies: ['React', 'API', 'Database', 'tailwind CSS'],
     category: 'Full-Stack',
     github: 'https://github.com/mkhaque1/api-project-movie-app',
@@ -137,11 +118,8 @@ export const projects = [
       'A sleek landing page for a mobile app with a focus on user engagement and conversion.',
     longDescription:
       'This app landing page is designed to highlight the features and benefits of a mobile application. It includes sections for app screenshots, user testimonials, pricing plans, and a call-to-action to download the app. The design is optimized for both desktop and mobile devices.',
-    image:
-      'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-    images: [
-      'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-    ],
+    image: 'src/images/app_landing_page.png',
+    images: ['src/images/app_landing_page.png'],
     technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Netlify'],
     category: 'Frontend',
     github: 'https://github.com/mkhaque1/iphone-3d-website-developing',

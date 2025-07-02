@@ -167,11 +167,12 @@ const Projects = () => {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  {/* Stronger dark overlay for better text readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
                   {/* Overlay Content */}
-                  <div className="absolute inset-0 flex items-end p-6">
-                    <div className="text-white">
+                  <div className="absolute inset-0 flex items-end p-6 z-10">
+                    <div className="text-white drop-shadow-lg">
                       <h3 className="text-xl font-bold mb-2">
                         {project.title}
                       </h3>
@@ -182,7 +183,7 @@ const Projects = () => {
                   </div>
 
                   {/* Category Badge */}
-                  <div className="absolute top-4 left-4">
+                  <div className="absolute top-4 left-4 z-20">
                     <span className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-medium rounded-full">
                       {project.category}
                     </span>
