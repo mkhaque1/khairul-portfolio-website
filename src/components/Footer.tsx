@@ -87,7 +87,7 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <Phone className="w-4 h-4 text-gray-400" />
-              <span className="text-sm text-gray-400">+1 (555) 123-4567</span>
+              <span className="text-sm text-gray-400">+49 01525 xxx</span>
             </motion.div>
           </div>
 

@@ -13,7 +13,7 @@ export const projects = [
     ],
     technologies: ['Next js', 'React', 'Firebase', 'Stripe', 'Tailwind CSS'],
     category: 'Full-Stack',
-    Live: 'https://captioncraftt.com',
+    demo: 'https://captioncraftt.com',
     tags: ['AI', 'Real-time', 'Payment Processing', 'Full-Stack'],
   },
   {
@@ -31,7 +31,7 @@ export const projects = [
     technologies: ['React', 'TypeScript', 'Firebase', 'Shadcn UI'],
     category: 'Frontend',
     github: 'https://github.com/mkhaque1',
-    demo: 'quick-split-together.vercel.app',
+    demo: 'https://quick-split-together.vercel.app',
     tags: ['Productivity', 'Collaboration', 'Real-time'],
   },
   {
@@ -93,7 +93,7 @@ export const projects = [
     images: ['/images/agency_portfolio.png'],
     technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Netlify'],
     category: 'Frontend',
-    Live: 'https://www.pyonet.com/',
+    demo: 'https://www.pyonet.com/',
     tags: ['Portfolio', 'Animation', 'Responsive'],
   },
   {

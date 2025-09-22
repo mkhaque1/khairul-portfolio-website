@@ -119,7 +119,7 @@ const About = () => {
                 Hi, I'm Khairul Haque
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                With over 5 years of experience in frontend development, I
+                With over 6 years of experience in frontend development, I
                 specialize in creating modern, responsive web applications that
                 not only look great but also deliver exceptional user
                 experiences. My journey in web development started with a

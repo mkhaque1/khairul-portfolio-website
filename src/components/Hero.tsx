@@ -113,17 +113,12 @@ const Hero = () => {
             variants={itemVariants}
           >
             {[
-              { icon: Code, label: '50+ Projects', color: 'text-blue-500' },
               {
                 icon: Palette,
-                label: '5+ Years Experience',
+                label: '6+ Years Experience',
                 color: 'text-purple-500',
               },
-              {
-                icon: Zap,
-                label: '100+ Happy Clients',
-                color: 'text-pink-500',
-              },
+              { icon: Code, label: '100+ Projects', color: 'text-blue-500' },
             ].map((stat, index) => (
               <motion.div
                 key={index}
