@@ -5,7 +5,7 @@ export const projects = [
     description:
       'From Threads to Reels — craft engaging content for any platform with AI Support for LinkedIn, Twitter, Instagram, TikTok, YouTube & more.',
     longDescription:
-      'This comprehensive e-commerce platform was built to handle high-traffic scenarios with real-time inventory management. The platform includes features like user authentication, shopping cart functionality, payment processing with Stripe, order tracking, and a comprehensive admin dashboard for managing products, orders, and analytics.',
+      'From Threads to Reels — craft engaging content for any platform with AI Support for LinkedIn, Twitter, Instagram, TikTok, YouTube & more.',
     image: '/images/captioncraftt.png',
     images: [
       '/images/captioncraftt_dashboard.png',
@@ -36,21 +36,19 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'Weather Dashboard',
+    title: 'Task Manager',
     description:
-      'A responsive weather dashboard with location-based forecasts, interactive maps, and weather alerts.',
+      'A responsive task management application, real-time updates, and a clean interface for organizing tasks and projects.',
     longDescription:
-      'This weather dashboard provides comprehensive weather information with location-based forecasts, interactive weather maps, severe weather alerts, and historical weather data. The application features a clean, intuitive interface with customizable widgets and supports multiple locations.',
+      'This task management application was designed to improve team productivity with features like real-time collaboration, drag-and-drop task organization, deadline tracking, file attachments, and detailed progress analytics. The app supports multiple projects and team members with role-based permissions.',
     image:
       'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-    images: [
-      'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-    ],
-    technologies: ['React', 'D3.js', 'OpenWeather API', 'Tailwind CSS'],
+    images: ['/images/task.png'],
+    technologies: ['valina JS', 'LocalStorage', 'HTML', 'TailwindCSS'],
     category: 'Frontend',
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-    tags: ['Weather', 'API Integration', 'Data Visualization'],
+    github: 'https://github.com/mkhaque1/TaskManager',
+    demo: 'https://task-manager-theta-ten-72.vercel.app/',
+    tags: ['TaskManager', 'Local Storage', 'Valina JS', 'Frontend'],
   },
   {
     id: 4,
