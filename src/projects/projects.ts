@@ -13,7 +13,7 @@ export const projects = [
     ],
     technologies: ['Next js', 'React', 'Firebase', 'Stripe', 'Tailwind CSS'],
     category: 'Full-Stack',
-    demo: 'https://captioncraftt.com',
+    demo: 'https://captioncraftai-ten.vercel.app/',
     tags: ['AI', 'Real-time', 'Payment Processing', 'Full-Stack'],
   },
   {
