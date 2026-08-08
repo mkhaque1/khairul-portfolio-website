@@ -38,8 +38,8 @@ const Header = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/Khairul_haque-CV-2026_new.pdf';
-    link.download = 'Khairul_haque-CV-2026_new.pdf';
+    link.href = '/Khairul_Haque_CV.pdf';
+    link.download = 'Khairul_Haque_CV.pdf';
     link.click();
   };
 
