@@ -38,14 +38,14 @@ const Header = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/M M Khairul Haque_CV_2025.pdf';
-    link.download = 'M_M_Khairul_Haque_CV.pdf';
+    link.href = '/Khairul_haque-CV-2026_new.pdf';
+    link.download = 'Khairul_haque-CV-2026_new.pdf';
     link.click();
   };
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50 flex justify-center transition-all duration-500 ease-out"
+      className='fixed top-0 left-0 right-0 z-50 flex justify-center transition-all duration-500 ease-out'
       style={{
         paddingTop: scrollProgress > 0 ? '8px' : '20px',
       }}
@@ -54,7 +54,7 @@ const Header = () => {
       transition={{ duration: 0.6 }}
     >
       <motion.div
-        className="transition-all duration-500 ease-out rounded-2xl backdrop-blur-xl border shadow-lg"
+        className='transition-all duration-500 ease-out rounded-2xl backdrop-blur-xl border shadow-lg'
         style={{
           width: scrollProgress > 0 ? '80%' : '95%',
           maxWidth: scrollProgress > 0 ? '1200px' : '1400px',
@@ -72,29 +72,29 @@ const Header = () => {
               : '0 4px 16px rgba(0, 0, 0, 0.05)',
         }}
       >
-        <div className="px-4 md:px-6">
-          <nav className="flex items-center justify-between h-14 md:h-16">
+        <div className='px-4 md:px-6'>
+          <nav className='flex items-center justify-between h-14 md:h-16'>
             {/* Logo */}
             <motion.div
-              className="flex items-center space-x-2"
+              className='flex items-center space-x-2'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">MK</span>
+              <div className='w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center'>
+                <span className='text-white font-bold text-sm'>MK</span>
               </div>
-              <span className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
+              <span className='text-lg md:text-xl font-bold text-gray-900 dark:text-white'>
                 Khairul Haque
               </span>
             </motion.div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-6">
+            <div className='hidden md:flex items-center space-x-6'>
               {navItems.map((item) => (
                 <motion.a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors duration-200 text-sm font-medium"
+                  className='text-gray-700 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors duration-200 text-sm font-medium'
                   whileHover={{ y: -2 }}
                   whileTap={{ y: 0 }}
                 >
@@ -103,38 +103,38 @@ const Header = () => {
               ))}
 
               {/* Theme Toggle */}
-              <div className="flex items-center space-x-2">
+              <div className='flex items-center space-x-2'>
                 <motion.button
                   onClick={() =>
                     setTheme(
                       theme === 'light'
                         ? 'dark'
                         : theme === 'dark'
-                        ? 'system'
-                        : 'light'
+                          ? 'system'
+                          : 'light',
                     )
                   }
-                  className="p-2 rounded-lg bg-white/10 dark:bg-gray-800/30 hover:bg-white/20 dark:hover:bg-gray-700/40 transition-colors duration-200 backdrop-blur-sm"
+                  className='p-2 rounded-lg bg-white/10 dark:bg-gray-800/30 hover:bg-white/20 dark:hover:bg-gray-700/40 transition-colors duration-200 backdrop-blur-sm'
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <ThemeIcon className="w-4 h-4 text-gray-700 dark:text-gray-300" />
+                  <ThemeIcon className='w-4 h-4 text-gray-700 dark:text-gray-300' />
                 </motion.button>
 
                 {/* CV Download */}
                 <motion.button
                   onClick={handleDownloadCV}
-                  className="relative flex items-center space-x-2 px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg text-sm font-medium overflow-hidden group"
+                  className='relative flex items-center space-x-2 px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg text-sm font-medium overflow-hidden group'
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <Download className="w-4 h-4 relative z-10" />
-                  <span className="relative z-10">CV</span>
+                  <div className='absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
+                  <Download className='w-4 h-4 relative z-10' />
+                  <span className='relative z-10'>CV</span>
 
                   {/* Animated border */}
                   <div
-                    className="absolute inset-0 rounded-lg border-2 border-transparent bg-gradient-to-r from-purple-400 to-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    className='absolute inset-0 rounded-lg border-2 border-transparent bg-gradient-to-r from-purple-400 to-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300'
                     style={{
                       background:
                         'linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent)',
@@ -148,14 +148,14 @@ const Header = () => {
 
             {/* Mobile Menu Button */}
             <motion.button
-              className="md:hidden p-2 rounded-lg bg-white/10 dark:bg-gray-800/30 backdrop-blur-sm"
+              className='md:hidden p-2 rounded-lg bg-white/10 dark:bg-gray-800/30 backdrop-blur-sm'
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               whileTap={{ scale: 0.95 }}
             >
               {isMenuOpen ? (
-                <X className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+                <X className='w-6 h-6 text-gray-700 dark:text-gray-300' />
               ) : (
-                <Menu className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+                <Menu className='w-6 h-6 text-gray-700 dark:text-gray-300' />
               )}
             </motion.button>
           </nav>
@@ -172,12 +172,12 @@ const Header = () => {
             }}
             transition={{ duration: 0.3 }}
           >
-            <div className="py-4 space-y-4 bg-white/10 dark:bg-gray-900/20 backdrop-blur-xl rounded-lg mt-2 border border-white/20 dark:border-gray-700/30">
+            <div className='py-4 space-y-4 bg-white/10 dark:bg-gray-900/20 backdrop-blur-xl rounded-lg mt-2 border border-white/20 dark:border-gray-700/30'>
               {navItems.map((item) => (
                 <motion.a
                   key={item.name}
                   href={item.href}
-                  className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors duration-200"
+                  className='block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors duration-200'
                   onClick={() => setIsMenuOpen(false)}
                   whileHover={{ x: 10 }}
                 >
@@ -185,33 +185,33 @@ const Header = () => {
                 </motion.a>
               ))}
 
-              <div className="flex items-center justify-between px-4 pt-2 border-t border-white/20 dark:border-gray-700/30">
+              <div className='flex items-center justify-between px-4 pt-2 border-t border-white/20 dark:border-gray-700/30'>
                 <motion.button
                   onClick={() =>
                     setTheme(
                       theme === 'light'
                         ? 'dark'
                         : theme === 'dark'
-                        ? 'system'
-                        : 'light'
+                          ? 'system'
+                          : 'light',
                     )
                   }
-                  className="p-2 rounded-lg bg-white/10 dark:bg-gray-800/30 hover:bg-white/20 dark:hover:bg-gray-700/40 transition-colors duration-200 backdrop-blur-sm"
+                  className='p-2 rounded-lg bg-white/10 dark:bg-gray-800/30 hover:bg-white/20 dark:hover:bg-gray-700/40 transition-colors duration-200 backdrop-blur-sm'
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <ThemeIcon className="w-4 h-4 text-gray-700 dark:text-gray-300" />
+                  <ThemeIcon className='w-4 h-4 text-gray-700 dark:text-gray-300' />
                 </motion.button>
 
                 <motion.button
                   onClick={handleDownloadCV}
-                  className="relative flex items-center space-x-2 px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg text-sm font-medium overflow-hidden group"
+                  className='relative flex items-center space-x-2 px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg text-sm font-medium overflow-hidden group'
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <Download className="w-4 h-4 relative z-10" />
-                  <span className="relative z-10">Download CV</span>
+                  <div className='absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
+                  <Download className='w-4 h-4 relative z-10' />
+                  <span className='relative z-10'>Download CV</span>
                 </motion.button>
               </div>
             </div>
